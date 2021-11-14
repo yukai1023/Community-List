@@ -1,0 +1,80 @@
+.fonts {
+color:black;
+font-weight: bold;  
+font-style:italic
+}
+
+.friends-border {
+border-radius: 20px
+}
+
+.pic-border {
+-webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.container1  {
+  position:relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+
+/* 標誌Icons */
+.fa-gratipay{
+  color: red;
+}
+
+.fa-people-arrows{
+  color: black;
+}
+
+.fa-address-card{
+  color: blue;
+}
+
+.fa-mars{
+  color: blue;
+  float:right;
+  width:10px;
+  font-size:large
+}
+
+.fa-venus{
+  color: rgb(255, 138, 157);
+  float:right;
+  width:10px;
+  font-size:large
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: xx-large ;
+  top: 15px;
+  left: 18px;
+  color: red;
+}
+.fa-heart:hover{
+  color: red;
+  animation: beat 1s infinite normal 
+}
+@keyframes beat {
+  20% {
+    transform: scale(1.2);
+    color: rgb(255, 13, 13);
+  }
+  40% {
+    transform: scale(1);
+    color: rgb(255, 13, 13);
+  }
+  60% {
+    transform: scale(1.2);
+    color: rgb(255, 13, 13);
+  }
+}  

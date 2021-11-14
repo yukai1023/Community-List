@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Friends</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img src="https://i.ibb.co/cJS1ZGh/noun-success-2909316-1.png" width="60" height="60">
+    <a class="navbar-brand fonts " style="font-size:1cm" href="#" id="title-Friends">Friends</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 " style="font-size:0.6cm">
+        <li class="nav-item">
+          <a class="nav-link fonts" href="#"><i class="far fa-address-card"></i>Profile</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link fonts" href="favorite.html"><i class="fab fa-gratipay"></i>Favorite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fonts" href="#" data-toggle="collapse" data-target="#gender-contain" aria-expanded="false"
+            aria-controls="gender-contain"><i class="fas fa-people-arrows" id="gender-click"></i>Gender</a>
+          <div class="col ">
+            <div class="collapse multi-collapse " id="gender-contain">
+              <div class="card card-body " id="navbar-gender">
+                <a class="nav-link fonts " href="#" id="all">All</a>
+                <a class="nav-link fonts " href="#" id="male">Male</a>
+                <a class="nav-link fonts " href="#" id="female">Female</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- Search Bar -->
+      <form class="form-inline my-2 my-lg-0" id="search-form">
+        <input class="form-control mr-sm-2 fonts" type="search" placeholder="Name or Surname" aria-label="Search"
+          id="search-input">
+        <button class="btn btn-outline-dark my-2 my-sm-0 fonts" type="submit" id="search-submit-button">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Render List -->
+  <div class="container-fluid">
+    <div class="row" style="background-color: #f8e1ef; " id="data-panel">
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal " id="people-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header " style="background-color: #e3f2fd; ">
+            <div class="modal-modal fonts container1" style="font-size:0.6cm" id="people-modal-title">Modal tssitle
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div style="background-color: #f8e1ef; " id="people-modal-img">
+            <img src="" alt="movie-poster" class="img-fluid">
+          </div>
+          <div class="modal-body" style="background-color: #f8e1ef; " id="people-modal-body">
+            <p></p>
+          </div>
+          <div class="modal-footer" style="background-color: #e3f2fd; ">
+            <button type="button" class="btn btn-secondary font-weight-bold font-italic"
+              data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- paginator -->
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center py-3" id="paginator" style="background-color: #e3f2fd; "></ul>
+      </ul>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7e5d4878bc.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
